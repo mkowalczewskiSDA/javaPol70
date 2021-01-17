@@ -16,4 +16,10 @@ public class JavaDeveloper extends Employee {
     public void setKnownTechnologies(String[] knownTechnologies) {
         this.knownTechnologies = knownTechnologies;
     }
+
+    @Override
+    public void describe() {
+        System.out.println("Jestem Java Developerem, nazywam się "
+                +getName()+" "+getSurname());
+    }
 }

@@ -11,12 +11,23 @@ public class Main {
                 20,
                 strings);
 
-        Employee[] employees = {person};
-        Employee manager = new Manager("Jan",
+        Employee[] employees = {
+                person,
+                new Employee("Anna", "Nowak", 20, 5000),
+                new Manager("Marian", "Jakikolwiek", 34, 6000, null),
+                new JavaDeveloper("Stefan", "Inny", 40, 5000, null),
+                new SeniorJavaDeveloper("Alfred", "Nie mam pomyslu", 23, 7000, null, 20)
+        };
+
+        Manager manager = new Manager("Jan",
                 "Kowalski",
                 50,
                 20,
-                null);
+                employees);
+
         manager.describe();
+        for (Employee e:manager.getEmployees()) {
+            e.describe();
+        }
     }
 }
