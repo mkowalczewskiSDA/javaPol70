@@ -13,7 +13,7 @@ public class Main {
 
         Employee[] employees = {
                 person,
-                new Employee("Anna", "Nowak", 20, 5000),
+                new Employee("Annaaa", "Nowak", 20, 5000),
                 new Manager("Marian", "Jakikolwiek", 34, 6000, null),
                 new JavaDeveloper("Stefan", "Inny", 40, 5000, null),
                 new SeniorJavaDeveloper("Alfred", "Nie mam pomyslu", 23, 7000, null, 20)
